@@ -4,21 +4,59 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Premcare Physiotherapy Clinic | Expert Physiotherapy & Rehabilitation",
-  description: "Expert physiotherapy services for sports injuries, post-op rehab, back pain, and more. Book your appointment today at Premcare Physiotherapy Clinic.",
-  keywords: "physiotherapy, physical therapy, sports rehab, back pain treatment, physiotherapist, rehabilitation, sports injuries",
-  icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/logo.png', type: 'image/png' },
-    ],
-    apple: '/logo.png',
+  metadataBase: new URL('https://premcare.com'), // Replace with your actual domain when deployed (e.g. from Vercel)
+  title: {
+    default: "Premcare Physiotherapy | Mobile Physio Services in Lagos",
+    template: "%s | Premcare Physiotherapy"
   },
+  description: "Expert mobile physiotherapy services delivered to your home in Lekki, Ikoyi, Victoria Island, Ikeja, and across Lagos. Specializing in sports rehab, post-op recovery, and pain management.",
+  keywords: [
+    "mobile physiotherapy lagos",
+    "home physiotherapy service",
+    "physiotherapist lekki",
+    "physiotherapy ikoyi",
+    "sports injury rehabilitation",
+    "stroke rehabilitation home service",
+    "back pain treatment lagos",
+    "private physiotherapist",
+    "premcare physiotherapy",
+    "physio at home"
+  ],
+  authors: [{ name: "Premcare Physiotherapy" }],
+  creator: "Premcare Physiotherapy",
+  publisher: "Premcare Physiotherapy",
   openGraph: {
-    title: "Premcare Physiotherapy Clinic",
-    description: "Expert physiotherapy services for sports injuries, post-op rehab, back pain, and more.",
-    type: "website",
-    images: ['/logo.png'],
+    title: "Premcare Physiotherapy | Expert Mobile Rehab in Lagos",
+    description: "Bringing professional physiotherapy to your doorstep. We serve Lekki, Ikoyi, VI, Ikeja, and more.",
+    url: 'https://premcare.com',
+    siteName: 'Premcare Physiotherapy',
+    locale: 'en_US',
+    type: 'website',
+    images: [
+      {
+        url: '/logo.png', // Replace with a dedicated OG image if available (1200x630px)
+        width: 800,
+        height: 600,
+        alt: 'Premcare Physiotherapy Logo',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Premcare Mobile Physiotherapy",
+    description: "Expert physiotherapy at your home in Lagos. Book your session today.",
+    images: ['/logo.png'], // Ideally needs a wider image
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

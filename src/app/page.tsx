@@ -8,8 +8,58 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'PhysiotherapyClinic',
+    name: 'Premcare Physiotherapy',
+    image: 'https://premcare.com/logo.png',
+    description: 'Expert mobile physiotherapy services delivered to your home in Lagos. Serving Lekki, Ikoyi, Victoria Island, Ikeja, and more.',
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Lekki',
+      addressRegion: 'Lagos',
+      addressCountry: 'NG'
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 6.4698,
+      longitude: 3.5852
+    },
+    url: 'https://premcare.com',
+    telephone: '+2348023331387',
+    areaServed: [
+      { '@type': 'City', name: 'Lekki' },
+      { '@type': 'City', name: 'Ikoyi' },
+      { '@type': 'City', name: 'Victoria Island' },
+      { '@type': 'City', name: 'Ikeja' },
+      { '@type': 'City', name: 'Surulere' },
+      { '@type': 'City', name: 'Maryland' },
+      { '@type': 'City', name: 'Ikorodu' },
+      { '@type': 'City', name: 'Ajah' }
+    ],
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '08:00',
+        closes: '19:00'
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: 'Saturday',
+        opens: '09:00',
+        closes: '15:00'
+      }
+    ],
+    priceRange: '₦₦'
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroOverlay}></div>

@@ -3,8 +3,8 @@ import Link from 'next/link';
 import styles from './about.module.css';
 
 export const metadata: Metadata = {
-    title: 'About Us | Premcare Physiotherapy Clinic',
-    description: 'Meet our team of expert physiotherapists dedicated to helping you recover and reach your full potential.',
+    title: 'About Premcare | Mobile Physiotherapy in Lagos',
+    description: 'Discover Premcare\'s commitment to convenient, home-based rehabilitation. Our expert physiotherapists serve Lekki, Ikoyi, VI, Ikeja, and surrounding areas.',
 };
 
 export default function About() {

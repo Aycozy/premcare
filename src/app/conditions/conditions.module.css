@@ -1,0 +1,266 @@
+.conditionsPage {
+    padding-top: 80px;
+}
+
+.hero {
+    background: var(--gradient-hero);
+    padding: 6rem 0 4rem;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+    font-size: 1.375rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Conditions Grid */
+.conditionsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.conditionCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 !important;
+    overflow: hidden;
+}
+
+.cardHeaderImage {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.conditionImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.conditionCard:hover .conditionImg {
+    transform: scale(1.05);
+}
+
+.cardContent {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.conditionCard h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-neutral-900);
+}
+
+.conditionDescription {
+    color: var(--color-neutral-600);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.conditionDetails {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.detailBlock h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-neutral-800);
+    margin-bottom: 0.75rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.detailBlock ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detailBlock li {
+    padding: 0.5rem 0;
+    padding-left: 1.75rem;
+    position: relative;
+    color: var(--color-neutral-600);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+}
+
+.detailBlock li::before {
+    content: '•';
+    position: absolute;
+    left: 0.5rem;
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.bookBtn {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 0.875rem 1.5rem;
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    transition: all var(--transition-base);
+    margin-top: auto;
+}
+
+.bookBtn:hover {
+    background: var(--color-primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* When to Seek Treatment Section */
+.whenSection {
+    background: var(--color-neutral-50);
+}
+
+.signsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.signCard {
+    background: white;
+    padding: 0;
+    border-radius: var(--radius-xl);
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.signCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.signImageWrapper {
+    height: 160px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.signImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.signCard:hover .signImage {
+    transform: scale(1.05);
+}
+
+.signContent {
+    padding: 1.5rem;
+}
+
+.signCard h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-neutral-900);
+}
+
+.signCard p {
+    color: var(--color-neutral-600);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* CTA Section */
+.ctaSection {
+    background: var(--gradient-hero);
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+}
+
+.ctaContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ctaContent h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.ctaContent p {
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+.ctaActions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0 3rem;
+    }
+
+    .conditionsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .signsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaActions {
+        flex-direction: column;
+    }
+
+    .ctaActions .btn {
+        width: 100%;
+    }
+}

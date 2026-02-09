@@ -1,0 +1,499 @@
+.aboutPage {
+    padding-top: 80px;
+}
+
+.hero {
+    background: var(--gradient-hero);
+    padding: 6rem 0 4rem;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+    font-size: 1.375rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Story Section */
+.storyGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.storyContent h2 {
+    margin-bottom: 2rem;
+}
+
+.storyContent p {
+    color: var(--color-neutral-600);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1.0625rem;
+}
+
+.storyImage {
+    position: relative;
+}
+
+.imageWrapper {
+    position: relative;
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+}
+
+.storyImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.imageWrapper:hover .storyImg {
+    transform: scale(1.05);
+}
+
+/* Philosophy Section */
+.philosophySection {
+    background: var(--color-neutral-50);
+}
+
+.philosophyGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.philosophyCard {
+    text-align: center;
+    transition: all var(--transition-base);
+}
+
+/* Image Card Styles for Philosophy */
+.philosophyImageCard {
+    position: relative;
+    overflow: hidden;
+    padding: 0 !important;
+    min-height: 280px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: left;
+}
+
+.philosophyImageCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.cardImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.philosophyImageCard:hover .cardImage {
+    transform: scale(1.05);
+}
+
+.cardOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(26, 49, 82, 0.98) 0%, rgba(26, 49, 82, 0.8) 50%, rgba(26, 49, 82, 0.2) 100%);
+    display: flex;
+    align-items: flex-end;
+    transition: background var(--transition-base);
+}
+
+.philosophyImageCard:hover .cardOverlay {
+    background: linear-gradient(to top, rgba(26, 49, 82, 0.99) 0%, rgba(26, 49, 82, 0.85) 60%, rgba(26, 49, 82, 0.3) 100%);
+}
+
+.cardContent {
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.cardContent h3 {
+    font-size: 1.375rem;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.cardContent p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Team Section */
+.teamGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+}
+
+.teamCard {
+    text-align: center;
+    overflow: hidden;
+}
+
+.teamImage {
+    margin: -2rem -2rem 1.5rem -2rem;
+    background: var(--gradient-primary);
+}
+
+.teamImg {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.teamCard:hover .teamImg {
+    transform: scale(1.05);
+}
+
+.teamInfo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-neutral-900);
+}
+
+.teamRole {
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+}
+
+.teamQualifications {
+    color: var(--color-neutral-500);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.teamBio {
+    color: var(--color-neutral-600);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.specialties {
+    text-align: left;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-neutral-200);
+}
+
+.specialties strong {
+    color: var(--color-neutral-700);
+    font-size: 0.95rem;
+}
+
+.specialties ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0.75rem;
+}
+
+.specialties li {
+    color: var(--color-neutral-600);
+    padding: 0.375rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+.specialties li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+/* Stats Section */
+.statsSection {
+    background: var(--gradient-hero);
+    color: white;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    text-align: center;
+}
+
+.stat {
+    padding: 2rem;
+}
+
+.statNumber {
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, white 0%, rgba(255, 255, 255, 0.8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.statLabel {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+}
+
+/* CTA Section */
+.ctaSection {
+    background: linear-gradient(rgba(26, 49, 82, 0.9), rgba(26, 49, 82, 0.8)), url('/modern-facility.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 6rem 0;
+    color: white;
+}
+
+.ctaContent {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.ctaContent h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.ctaContent p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0 3rem;
+    }
+
+    .storyGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .teamGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Locations Section */
+.locationsSection {
+    background: var(--color-neutral-50);
+}
+
+.locationsContent {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.locationsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.locationsGrid .locationBlock {
+    padding: 2.5rem;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base);
+}
+
+.locationsGrid .locationBlock:hover {
+    transform: translateY(-5px);
+}
+
+.locationsGrid .locationBlock h3 {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+.locationsGrid .locationBlock h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background: var(--color-secondary);
+    border-radius: 2px;
+    transition: width var(--transition-base);
+}
+
+.locationsGrid .locationBlock:hover h3::after {
+    width: 60px;
+}
+
+.locationsGrid .locationBlock p {
+    margin-bottom: 1.25rem;
+    color: var(--color-neutral-600);
+    line-height: 1.7;
+}
+
+.locationsGrid .locationBlock p:last-child {
+    margin-bottom: 0;
+}
+
+.locationsGrid .locationBlock strong {
+    color: var(--color-neutral-800);
+    font-weight: 600;
+}
+
+.locationTagline {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+    font-style: italic;
+    color: var(--color-neutral-600);
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .locationsGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Online Consultation Section */
+.onlineConsultSection {
+    background: white;
+}
+
+.onlineGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.onlineImageWrapper {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.onlineImg {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform var(--transition-slow);
+}
+
+.sectionBadge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--color-accent);
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.onlineContent h2 {
+    margin-bottom: 1.5rem;
+}
+
+.onlineIntro {
+    font-size: 1.125rem;
+    color: var(--color-neutral-600);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.catalogGrid {
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.catalogItem {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.catalogIcon {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(26, 49, 82, 0.1);
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.catalogItem h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+    color: var(--color-neutral-900);
+}
+
+.catalogItem p {
+    font-size: 0.95rem;
+    color: var(--color-neutral-600);
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .onlineGrid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .onlineImageWrapper {
+        order: -1;
+    }
+}

@@ -1,0 +1,326 @@
+.contactPage {
+    padding-top: 80px;
+}
+
+.hero {
+    background: linear-gradient(rgba(26, 49, 82, 0.9), rgba(26, 49, 82, 0.8)), url('/our-story.png');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0 4rem;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+    font-size: 1.375rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Contact Cards */
+.contactCardsSection {
+    padding-top: 0;
+    margin-top: -4rem;
+    position: relative;
+    z-index: 10;
+}
+
+.contactCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.contactCard {
+    text-align: center;
+    background: white;
+    transition: all var(--transition-base);
+}
+
+.contactCard:hover {
+    transform: translateY(-8px);
+}
+
+.contactIcon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.contactIcon svg {
+    width: 32px;
+    height: 32px;
+    color: white;
+}
+
+.contactCard h3 {
+    font-size: 1.375rem;
+    margin-bottom: 0.75rem;
+}
+
+.contactCard p {
+    color: var(--color-neutral-600);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.hours {
+    font-size: 0.9375rem;
+    line-height: 1.8;
+}
+
+.contactLink {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all var(--transition-base);
+    display: inline-block;
+}
+
+.contactLink:hover {
+    color: var(--color-primary-dark);
+    transform: translateX(3px);
+}
+
+/* Booking Section */
+.bookingSection {
+    background: var(--color-neutral-50);
+}
+
+.bookingGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.formWrapper h2 {
+    margin-bottom: 0.75rem;
+}
+
+.formDescription {
+    color: var(--color-neutral-600);
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+.bookingForm {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-2xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: var(--color-neutral-700);
+    font-size: 0.9375rem;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    border: 2px solid var(--color-neutral-200);
+    border-radius: var(--radius-md);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: var(--color-neutral-800);
+    transition: all var(--transition-base);
+    background: white;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.successMessage {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: hsl(160, 60%, 95%);
+    border: 2px solid hsl(160, 60%, 45%);
+    border-radius: var(--radius-lg);
+    color: hsl(160, 60%, 25%);
+    margin-top: 1.5rem;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.successMessage svg {
+    width: 24px;
+    height: 24px;
+    color: hsl(160, 60%, 45%);
+    flex-shrink: 0;
+}
+
+.successMessage span {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.errorMessage {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem;
+    background: hsl(0, 80%, 96%);
+    border: 2px solid hsl(0, 70%, 50%);
+    border-radius: var(--radius-lg);
+    color: hsl(0, 70%, 30%);
+    margin-top: 1.5rem;
+    animation: fadeInUp 0.5s ease-out;
+}
+
+.errorMessage svg {
+    width: 24px;
+    height: 24px;
+    color: hsl(0, 70%, 50%);
+    flex-shrink: 0;
+}
+
+.errorMessage span {
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Map */
+.mapWrapper {
+    position: sticky;
+    top: 120px;
+}
+
+.mapPlaceholder {
+    position: relative;
+    border-radius: var(--radius-2xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 2rem;
+    background: white;
+}
+
+.mapImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    display: block;
+}
+
+.mapOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.directionsInfo {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+}
+
+.directionsInfo h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: var(--color-neutral-900);
+}
+
+.directionsInfo ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.directionsInfo li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--color-neutral-600);
+    line-height: 1.6;
+    border-bottom: 1px solid var(--color-neutral-100);
+}
+
+.directionsInfo li:last-child {
+    border-bottom: none;
+}
+
+.directionsInfo li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.directionsInfo strong {
+    color: var(--color-neutral-800);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .bookingGrid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .mapWrapper {
+        position: static;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero {
+        padding: 4rem 0 3rem;
+    }
+
+    .contactCardsSection {
+        margin-top: -2rem;
+    }
+
+    .contactCards {
+        grid-template-columns: 1fr;
+    }
+
+    .bookingForm {
+        padding: 1.5rem;
+    }
+}

@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://premcare.com/sitemap.xml',
+        sitemap: 'https://premcarephysiotherapyclinic.com/sitemap.xml',
     };
 }

@@ -25,7 +25,7 @@ export default function Home() {
       latitude: 6.4698,
       longitude: 3.5852
     },
-    url: 'https://premcare.com',
+    url: 'https://premcarephysiotherapyclinic.com',
     telephone: '+2348023331387',
     areaServed: [
       { '@type': 'City', name: 'Lekki' },

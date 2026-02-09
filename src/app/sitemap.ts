@@ -2,7 +2,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://premcare.com'; // IMPORTANT: Create a Vercel env var for URL in production
+    const baseUrl = 'https://premcarephysiotherapyclinic.com'; // IMPORTANT: Create a Vercel env var for URL in production
 
     return [
         {

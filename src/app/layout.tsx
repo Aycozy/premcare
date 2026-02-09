@@ -4,7 +4,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://premcare.com'), // Replace with your actual domain when deployed (e.g. from Vercel)
+  metadataBase: new URL('https://premcarephysiotherapyclinic.com'), // Replace with your actual domain when deployed (e.g. from Vercel)
   title: {
     default: "Premcare Physiotherapy | Mobile Physio Services in Lagos",
     template: "%s | Premcare Physiotherapy"
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Premcare Physiotherapy | Expert Mobile Rehab in Lagos",
     description: "Bringing professional physiotherapy to your doorstep. We serve Lekki, Ikoyi, VI, Ikeja, and more.",
-    url: 'https://premcare.com',
+    url: 'https://premcarephysiotherapyclinic.com',
     siteName: 'Premcare Physiotherapy',
     locale: 'en_US',
     type: 'website',

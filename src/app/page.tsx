@@ -69,7 +69,7 @@ export default function Home() {
               Your Journey to <span className={styles.highlight}>Recovery</span> Starts Here
             </h1>
             <p className={styles.heroSubtitle}>
-              Expert physiotherapy care tailored to your needs. From sports injuries, neurorehabilitation to chronic pain, we help you move better and feel stronger.
+              Expert mobile physiotherapy care tailored to your needs. From sports injuries, neurorehabilitation to chronic pain, we help you move better and feel stronger.
             </p>
             <div className={styles.heroActions}>
               <Link href="/contact#book" className="btn btn-accent">
@@ -81,9 +81,11 @@ export default function Home() {
                 </svg>
                 Book Appointment
               </Link>
+              {/*
               <Link href="/new-patients" className="btn btn-secondary">
                 New Patient Info
               </Link>
+              */}
             </div>
 
             {/* Trust Badges */}

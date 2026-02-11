@@ -148,10 +148,10 @@ export default function About() {
                         </div>
                         <div className={styles.onlineContent}>
                             <span className={styles.sectionBadge}>New & Unique</span>
-                            <h2>Online Consultation</h2>
+                            <h2>Premcare TeleRehab Ecosystem</h2>
                             <p className={styles.onlineIntro}>
-                                Can't meet in person? Experience our premium physiotherapy care from anywhere in the world.
-                                Our digital platform connects you directly with expert physiotherapists for a seamless recovery journey.
+                                Experience the future of physiotherapy with our exclusive digital platform. We combine hands-on care with
+                                advanced technology to accelerate your recovery and keep you connected to your physiotherapist 24/7.
                             </p>
 
                             <div className={styles.catalogGrid}>
@@ -163,8 +163,8 @@ export default function About() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h4>Virtual Assessment</h4>
-                                        <p>Comprehensive video evaluations to diagnose your condition and create a treatment plan.</p>
+                                        <h4>Free Virtual Assessment</h4>
+                                        <p>Start your journey with a complimentary video evaluation to diagnose your condition and create a tailored plan.</p>
                                     </div>
                                 </div>
 
@@ -176,8 +176,12 @@ export default function About() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h4>Premcare App Access</h4>
-                                        <p>Get personalized video exercise programs delivered straight to your phone with progress tracking.</p>
+                                        <h4>Premcare TeleRehab App</h4>
+                                        <p>
+                                            More than just an app, it's your personal rehab assistant. Access HD exercise videos, track your progress,
+                                            and receive real-time adjustments to your plan. This continuous guidance ensures you perform exercises correctly
+                                            and recover faster, even between visits.
+                                        </p>
                                     </div>
                                 </div>
 
@@ -188,14 +192,14 @@ export default function About() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h4>24/7 Chat Support</h4>
-                                        <p>Direct messaging with your physiotherapist for questions, guidance, and motivation.</p>
+                                        <h4>24/7 Expert Support</h4>
+                                        <p>Never feel alone in your recovery. Chat directly with your physiotherapist anytime for guidance, motivation, and peace of mind.</p>
                                     </div>
                                 </div>
                             </div>
 
                             <Link href="/contact#book" className="btn btn-primary">
-                                Book Online Session
+                                Book Free Session
                             </Link>
                         </div>
                     </div>
@@ -308,7 +312,7 @@ export default function About() {
                 <div className="container">
                     <div className={styles.statsGrid}>
                         <div className={styles.stat}>
-                            <div className={styles.statNumber}>15+</div>
+                            <div className={styles.statNumber}>10+</div>
                             <div className={styles.statLabel}>Years Experience</div>
                         </div>
                         <div className={styles.stat}>

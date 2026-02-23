@@ -1,0 +1,395 @@
+.blogPage {
+    background: var(--color-neutral-50);
+    min-height: 100vh;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    padding: 8rem 0 4rem;
+    text-align: center;
+    color: white;
+}
+
+.heroSubtitle {
+    color: var(--color-neutral-200);
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Featured Section ===== */
+.featuredSection {
+    margin-bottom: 3rem;
+}
+
+.featuredCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.featuredImageLink {
+    display: block;
+    overflow: hidden;
+}
+
+.featuredImageWrapper {
+    height: 100%;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+.featuredImageWrapper .blogImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.featuredImageLink:hover .blogImage {
+    transform: scale(1.05);
+}
+
+.featuredContent {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredBadge {
+    background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dark));
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    align-self: flex-start;
+    margin-bottom: 1.25rem;
+}
+
+.featuredTitleLink {
+    text-decoration: none;
+    color: inherit;
+}
+
+.featuredTitleLink:hover h2 {
+    color: var(--color-primary);
+}
+
+.featuredContent h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-neutral-900);
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+    transition: color 0.2s ease;
+}
+
+.featuredContent>p {
+    color: var(--color-neutral-600);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+}
+
+/* ===== Divider ===== */
+.locationsDivider {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-neutral-200), transparent);
+    margin-bottom: 1.25rem;
+}
+
+/* ===== Telerehab Highlight ===== */
+.teleRehabHighlight {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.25rem;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.06), rgba(37, 99, 235, 0.12));
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    border-radius: var(--radius-lg);
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 1.25rem;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.teleRehabHighlight:hover {
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.18));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.12);
+}
+
+.newBadge {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+}
+
+.teleRehabTitle {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-primary-dark);
+    flex-grow: 1;
+    line-height: 1.3;
+}
+
+/* ===== Locations in Featured Card ===== */
+.locationsHeading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+    margin-bottom: 0.4rem;
+}
+
+.locationsSubtitle {
+    color: var(--color-neutral-500);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.locationTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.locationPill {
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.locationPill:hover {
+    background: var(--color-primary);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* ===== View All Section ===== */
+.viewAllSection {
+    margin-top: auto;
+    padding-top: 0.5rem;
+}
+
+/* ===== Blog Grid (for /blog/articles) ===== */
+.blogGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.blogCard {
+    background: white;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogCard:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.imageWrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.blogImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.blogCard:hover .blogImage {
+    transform: scale(1.05);
+}
+
+.cardContent {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.locationTag {
+    background: var(--color-accent-light);
+    color: var(--color-accent-dark);
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    align-self: flex-start;
+    margin-bottom: 0.75rem;
+}
+
+.cardContent h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: var(--color-neutral-900);
+    line-height: 1.3;
+}
+
+.cardContent p {
+    color: var(--color-neutral-600);
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.readMore {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ===== Post Page Styles ===== */
+.postHero {
+    background: linear-gradient(rgba(26, 49, 82, 0.9), rgba(26, 49, 82, 0.8));
+    padding: 8rem 0 4rem;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.postHeroImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.postMeta {
+    color: var(--color-neutral-300);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.postContent {
+    max-width: 800px;
+    margin: 3rem auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-neutral-800);
+}
+
+.postContent h2 {
+    color: var(--color-primary);
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+.postContent h3 {
+    color: var(--color-neutral-900);
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.postContent p {
+    margin-bottom: 1.5rem;
+}
+
+.postContent ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.postContent li {
+    margin-bottom: 0.75rem;
+}
+
+.ctaBox {
+    background: var(--color-primary-light);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.ctaBox h3 {
+    margin-top: 0;
+    color: var(--color-primary-dark);
+}
+
+.ctaBox p {
+    margin-bottom: 1.5rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .blogGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .featuredCard {
+        grid-template-columns: 1fr;
+    }
+
+    .featuredImageWrapper {
+        min-height: 220px;
+    }
+
+    .featuredContent {
+        padding: 1.5rem;
+    }
+
+    .featuredContent h2 {
+        font-size: 1.3rem;
+    }
+
+    .locationsHeading {
+        font-size: 1rem;
+    }
+
+    .locationTags {
+        justify-content: center;
+    }
+}

@@ -23,6 +23,7 @@ export default function Header() {
         { name: 'Conditions', href: '/conditions' },
         /*  { name: 'New Patients', href: '/new-patients' }, */
         { name: 'About Us', href: '/about' },
+        { name: 'Blog', href: '/blog' },
         { name: 'Contact', href: '/contact' },
     ];
 

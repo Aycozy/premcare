@@ -1,0 +1,98 @@
+{
+  "expo": {
+    "name": "Premcare",
+    "slug": "premcare-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "scheme": "premcare",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0F1E"
+    },
+    "notification": {
+      "icon": "./assets/icon.png",
+      "color": "#0A6847",
+      "iosDisplayInForeground": true,
+      "androidMode": "default"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.premcare.mobile",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Premcare uses your camera for profile photos.",
+        "NSPhotoLibraryUsageDescription": "Premcare accesses your photos for profile pictures.",
+        "NSMicrophoneUsageDescription": "Premcare uses the microphone for video consultations.",
+        "NSLocationWhenInUseUsageDescription": "Premcare uses your location to find nearby clinics."
+      },
+      "entitlements": {
+        "aps-environment": "production"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0F1E",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.premcare.mobile",
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE",
+        "POST_NOTIFICATIONS"
+      ],
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#0A6847",
+          "sounds": []
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true,
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "minSdkVersion": 26
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
+          }
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "f79d5ab3-32bb-4b90-8ac3-9353b9a6fe31"
+      },
+      "supabaseUrl": "https://avvqbxejijtjekdmjlxg.supabase.co",
+      "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF2dnFieGVqaWp0amVrZG1qbHhnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI0NTQ4ODMsImV4cCI6MjA4ODAzMDg4M30.ms2FAnanaIW9TUZ7o56DEeQr0A1mVkVWSCK9oSBgpec"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/f79d5ab3-32bb-4b90-8ac3-9353b9a6fe31"
+    }
+  }
+}

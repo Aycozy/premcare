@@ -115,8 +115,8 @@ export default function Contact() {
                             </div>
                             <h3>Email</h3>
                             <p>Send us a message anytime</p>
-                            <a href="mailto:info@premcare.com" className={styles.contactLink}>
-                                info@premcare.com
+                            <a href="mailto:info@premcarephysiotherapyclinic.com" className={styles.contactLink}>
+                                info@premcarephysiotherapyclinic.com
                             </a>
                         </div>
 

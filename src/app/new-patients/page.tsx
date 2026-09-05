@@ -187,10 +187,10 @@ export default function NewPatients() {
                             <h3>Insurance Accepted</h3>
                             <p>We accept most major insurance plans, including:</p>
                             <ul>
-                                <li>Blue Cross Blue Shield</li>
-                                <li>Aetna</li>
-                                <li>Cigna</li>
-                                <li>UnitedHealthcare</li>
+                                <li>Leadway Assurance</li>
+                                <li>Axa mansard</li>
+                                <li>Prestige</li>
+                                <li>Goldlink</li>
                                 <li>Medicare</li>
                                 <li>And many more</li>
                             </ul>
@@ -198,7 +198,7 @@ export default function NewPatients() {
                                 <strong>Note:</strong> Please call us to verify your specific plan coverage.
                             </p>
                         </div>
-
+                        {/*
                         <div className={`card ${styles.insuranceCard}`}>
                             <h3>Self-Pay Options</h3>
                             <p>Transparent pricing for those without insurance:</p>
@@ -220,6 +220,7 @@ export default function NewPatients() {
                                 <strong>Package deals available—</strong>ask about our multi-session discounts.
                             </p>
                         </div>
+                        */}
                     </div>
                 </div>
             </section>
@@ -268,7 +269,7 @@ export default function NewPatients() {
                             <h4>Can I book online?</h4>
                             <p>
                                 Yes! You can book appointments directly through our contact page, call us at +234 802 333 1387, or email
-                                info@premcare.com.
+                                info@premcarephysiotherapyclinic.com.
                             </p>
                         </div>
 

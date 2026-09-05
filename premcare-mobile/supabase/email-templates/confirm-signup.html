@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin:0;padding:0;background-color:#0A0F1E;font-family:'Segoe UI',Roboto,Arial,sans-serif;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#0A0F1E;padding:40px 20px;">
+    <tr>
+      <td align="center">
+        <table width="100%" cellpadding="0" cellspacing="0" style="max-width:520px;background-color:#111827;border-radius:16px;border:1px solid #1F2937;overflow:hidden;">
+          
+          <!-- Header -->
+          <tr>
+            <td style="background:linear-gradient(135deg,#0A6847,#065535);padding:32px;text-align:center;">
+              <div style="width:56px;height:56px;border-radius:50%;background-color:rgba(255,255,255,0.15);margin:0 auto 16px;line-height:56px;font-size:24px;font-weight:bold;color:#fff;">P</div>
+              <h1 style="margin:0;color:#fff;font-size:22px;font-weight:700;">Welcome to Premcare</h1>
+              <p style="margin:8px 0 0;color:rgba(255,255,255,0.8);font-size:14px;">Physiotherapy Clinic</p>
+            </td>
+          </tr>
+          
+          <!-- Body -->
+          <tr>
+            <td style="padding:32px;">
+              <p style="color:#E5E7EB;font-size:16px;line-height:1.6;margin:0 0 24px;">
+                Thanks for signing up! Please verify your email address to start booking your physiotherapy sessions.
+              </p>
+              
+              <!-- Button -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="center">
+                    <a href="{{ .ConfirmationURL }}" 
+                       style="display:inline-block;background-color:#0A6847;color:#fff;text-decoration:none;padding:14px 32px;border-radius:12px;font-size:16px;font-weight:600;letter-spacing:0.3px;">
+                      Verify My Email
+                    </a>
+                  </td>
+                </tr>
+              </table>
+              
+              <p style="color:#9CA3AF;font-size:13px;line-height:1.5;margin:24px 0 0;text-align:center;">
+                If the button doesn't work, copy and paste this link into your browser:
+              </p>
+              <p style="color:#0A6847;font-size:12px;word-break:break-all;margin:8px 0 0;text-align:center;">
+                {{ .ConfirmationURL }}
+              </p>
+            </td>
+          </tr>
+          
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 32px;border-top:1px solid #1F2937;text-align:center;">
+              <p style="color:#6B7280;font-size:12px;margin:0 0 4px;">
+                Premcare Physiotherapy Clinic
+              </p>
+              <p style="color:#6B7280;font-size:12px;margin:0;">
+                Expert care, wherever you are 🇳🇬
+              </p>
+            </td>
+          </tr>
+          
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

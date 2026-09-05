@@ -81,11 +81,11 @@ export default function Home() {
                 </svg>
                 Book Appointment
               </Link>
-              {/*
+
               <Link href="/new-patients" className="btn btn-secondary">
                 New Patient Info
               </Link>
-              */}
+
             </div>
 
             {/* Trust Badges */}

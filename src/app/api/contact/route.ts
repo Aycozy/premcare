@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
         const { data, error } = await resend.emails.send({
             from: process.env.EMAIL_FROM || 'onboarding@resend.dev',
-            to: [process.env.EMAIL_TO || 'info@premcare.com'],
+            to: [process.env.EMAIL_TO || 'info@premcarephysiotherapyclinic.com'],
             subject: `New Appointment Request: ${name}`,
             html: `
         <h2>New Appointment Request</h2>
